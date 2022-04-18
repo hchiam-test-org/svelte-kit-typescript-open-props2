@@ -1,5 +1,7 @@
 # [svelte-kit](https://kit.svelte.dev/) + typescript + [open-props](https://github.com/argyleink/open-props)
 
+To try to help test https://github.com/argyleink/open-props/pull/225
+
 To try to help debug https://github.com/argyleink/open-props/issues/199
 
 ```sh
