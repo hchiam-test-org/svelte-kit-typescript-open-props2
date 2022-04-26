@@ -34,6 +34,6 @@
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
-    "open-props": "hchiam-test-org/open-props-pr-225"
+    "open-props": "aaronccasanova/open-props#feat/typescript-declarations"
   }
 }

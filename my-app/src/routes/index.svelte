@@ -5,11 +5,26 @@
 <script lang="ts">
 	import Counter from '$lib/Counter.svelte';
 
-	// import sizes from 'open-props/src/sizes'; // Cannot find module 'open-props/src/sizes' or its corresponding type declarations.ts(2307)
-	// console.log('I can still print out sizes from open-props/src/sizes:', sizes);
-
 	import op from 'open-props/src' // No error! :)
 	// op['--animation-blink'] // auto-complete isn't working :(
+
+	// index.js loading JS object
+	import OpenProps from 'open-props'; // module
+	import OpenPropsSrc from 'open-props/src'; // unbundled ES module
+	import Colors from 'open-props/src/colors';
+
+	// object notation access is special to OpenProps
+	console.info(OpenProps.size1);
+	console.info(OpenProps['--size-1']);
+	console.info(OpenPropsSrc.animationBlinkAt);
+	console.info(OpenPropsSrc['--animation-blink-@']);
+
+	console.info(Colors['--indigo-5']);
+
+	// import just 1 color set object
+	// import { indigo } from 'open-props/src/colors'; // TODO
+	import { indigo } from 'open-props/src/props.colors';
+	console.info(indigo)
 </script>
 
 <svelte:head>
