@@ -29,3 +29,5 @@ npm run dev
 ```
 
 Use an IDE like VSCode to test out auto-complete in /my-app/src/routes/index.svelte
+
+Notice what version of open-props this repo is testing https://github.com/hchiam-test-org/svelte-kit-typescript-open-props2/blob/main/my-app/package.json#L37
